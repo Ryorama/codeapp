@@ -28,6 +28,11 @@ curl -OL https://github.com/holzschu/network_ios/releases/download/v0.2/network_
 unzip -q network_ios.xcframework.zip -d Term
 rm -f network_ios.xcframework.zip 
 
+# file cmds
+curl -OL https://github.com/holzschu/ios_system/releases/download/v2.9.0/files.xcframework.zip
+unzip -q files.xcframework.zip -d Term
+rm -f files.xcframework.zip
+
 # We are using an older version of SSH / SFTP
 curl -OL https://github.com/holzschu/ios_system/releases/download/v2.7.0/ssh_cmd.xcframework.zip
 unzip -q ssh_cmd.xcframework.zip -d Term
