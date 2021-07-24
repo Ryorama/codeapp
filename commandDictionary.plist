@@ -653,5 +653,12 @@
 		<string>3bBc:dEhiJm:OQ:RsStuUvVW:xX?</string>
 		<string>file</string>
 	</array>
+	<key>java</key>
+	<array>
+		<string>jdk/bin</string>
+		<string>java</string>
+		<string>3bBc:dEhiJm:OQ:RsStuUvVW:xX?</string>
+		<string>file</string>
+	</array>
 </dict>
 </plist>

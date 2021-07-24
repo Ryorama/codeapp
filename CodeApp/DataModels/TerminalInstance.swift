@@ -178,6 +178,14 @@ class TerminalInstance: NSObject, WKScriptMessageHandler, WKNavigationDelegate {
                 }
                 executeScript( "localEcho.printWide(\(commandList));")
                 self.readLine()
+				
+				//JDK bin
+				let javaBin = try! FileManager().url(for: .libraryDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("bin/jdk/bin")
+                if let commands = try? FileManager.default.contentsOfDirectory(atPath: javaBin.path){
+                    commandList += commands
+                }
+                executeScript( "localEcho.printWide(\(commandList));")
+                self.readLine()
             case let x where x.hasPrefix("code"):
                 let args = x.components(separatedBy: " ")
                 guard args.count > 1 else{
