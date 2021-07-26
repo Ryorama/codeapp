@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2151389826AE1C18000EC7B2 /* Clibgit2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2151389526AE1C18000EC7B2 /* Clibgit2.xcframework */; };
+		2151389926AE1C83000EC7B2 /* Clibgit2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2151389526AE1C18000EC7B2 /* Clibgit2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		215138A426AE25E3000EC7B2 /* MarkdownView in Frameworks */ = {isa = PBXBuildFile; productRef = 215138A326AE25E3000EC7B2 /* MarkdownView */; };
+		21F0BD4126ADEEAE0065D2EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9425205B263E103E0029427A /* InfoPlist.strings */; };
 		9407A759266F31DF00581E9D /* SwiftGit2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9407A758266F31DF00581E9D /* SwiftGit2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941CF5FB2641CBDA001199C0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 941CF5FA2641CBDA001199C0 /* Settings.bundle */; };
 		941CF5FE26463450001199C0 /* activityBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941CF5FD26463450001199C0 /* activityBar.swift */; };
@@ -344,7 +348,6 @@
 		94252054263E01CF0029427A /* pythonA-zlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94251CD2263E018A0029427A /* pythonA-zlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94252055263E01CF0029427A /* pythonA-zmq.backend.cffi._cffi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94251D56263E01950029427A /* pythonA-zmq.backend.cffi._cffi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		94252056263E01CF0029427A /* pythonA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94251CF5263E018D0029427A /* pythonA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94252059263E103E0029427A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9425205B263E103E0029427A /* InfoPlist.strings */; };
 		94369AFF25E3B933008419A0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94369AFE25E3B933008419A0 /* Media.xcassets */; };
 		94369B0125E3B933008419A0 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94369B0025E3B933008419A0 /* ActionRequestHandler.swift */; };
 		94369B0725E3B933008419A0 /* extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94369AFC25E3B933008419A0 /* extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -357,7 +360,6 @@
 		944EEBFB2563C386009D77FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944EEBFA2563C386009D77FE /* Preview Assets.xcassets */; };
 		944FC3FF25C543CD00C7C43C /* GitServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC3FE25C543CC00C7C43C /* GitServiceProvider.swift */; };
 		944FC40B25C5F69D00C7C43C /* HierarchyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FC40A25C5F69D00C7C43C /* HierarchyList.swift */; };
-		94638D8D268243CB00DDD7FC /* git.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94638D8B268243B800DDD7FC /* git.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9469AC9226A33B1E003F569F /* config.gypi in Resources */ = {isa = PBXBuildFile; fileRef = 9469A91B26A33B1D003F569F /* config.gypi */; };
 		9469AC9326A33B1E003F569F /* common.gypi in Resources */ = {isa = PBXBuildFile; fileRef = 9469A91E26A33B1D003F569F /* common.gypi */; };
 		9469AC9626A33B88003F569F /* NodeMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9469AC9126A33B1E003F569F /* NodeMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -507,8 +509,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2151389926AE1C83000EC7B2 /* Clibgit2.xcframework in Embed Frameworks */,
 				9469AC9C26A33D52003F569F /* php.xcframework in Embed Frameworks */,
-				94638D8D268243CB00DDD7FC /* git.xcframework in Embed Frameworks */,
 				9469AC9626A33B88003F569F /* NodeMobile.framework in Embed Frameworks */,
 				94F2FEA726A2D89A007EBC6D /* network_ios.xcframework in Embed Frameworks */,
 				94F2FEA526A2D45C007EBC6D /* freetype.xcframework in Embed Frameworks */,
@@ -876,6 +878,7 @@
 
 /* Begin PBXFileReference section */
 		0AD02631C11B8E0F8BE93D41 /* Pods-testfield.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testfield.debug.xcconfig"; path = "Target Support Files/Pods-testfield/Pods-testfield.debug.xcconfig"; sourceTree = "<group>"; };
+		2151389526AE1C18000EC7B2 /* Clibgit2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Clibgit2.xcframework; sourceTree = "<group>"; };
 		3E1E8079C05894592C2F09D9 /* Pods_Code.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Code.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7955ADC45CC2B60AC169DCB7 /* Pods-Code.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Code.debug.xcconfig"; path = "Target Support Files/Pods-Code/Pods-Code.debug.xcconfig"; sourceTree = "<group>"; };
 		9407A758266F31DF00581E9D /* SwiftGit2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftGit2.framework; sourceTree = "<group>"; };
@@ -1236,7 +1239,6 @@
 		944EEBFC2563C386009D77FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		944FC3FE25C543CC00C7C43C /* GitServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitServiceProvider.swift; sourceTree = "<group>"; };
 		944FC40A25C5F69D00C7C43C /* HierarchyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchyList.swift; sourceTree = "<group>"; };
-		94638D8B268243B800DDD7FC /* git.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = git.xcframework; sourceTree = "<group>"; };
 		9469A8F726A33B1D003F569F /* v8-platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "v8-platform.h"; sourceTree = "<group>"; };
 		9469A8F826A33B1D003F569F /* v8-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "v8-version.h"; sourceTree = "<group>"; };
 		9469A8F926A33B1D003F569F /* node_api_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node_api_types.h; sourceTree = "<group>"; };
@@ -1854,7 +1856,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2151389826AE1C18000EC7B2 /* Clibgit2.xcframework in Frameworks */,
 				94A7781C257BC452008FE7B2 /* ZIPFoundation in Frameworks */,
+				215138A426AE25E3000EC7B2 /* MarkdownView in Frameworks */,
 				94B7C4C825F551F800F1EF4E /* ios_system.xcframework in Frameworks */,
 				94D0A49D2594DDDE00C4572D /* MarkdownView in Frameworks */,
 				94A7418C25F74A85007A9728 /* Dynamic in Frameworks */,
@@ -1879,10 +1883,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		21F0BCCD26ADEAC30065D2EF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			path = ../../../Documents/Codeapp/CodeApp/Framework;
+			sourceTree = "<group>";
+		};
 		24509F1455D67D501EFBD28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94638D8B268243B800DDD7FC /* git.xcframework */,
 				9407A758266F31DF00581E9D /* SwiftGit2.framework */,
 				94D0A49B2594DDCD00C4572D /* MarkdownView */,
 				3E1E8079C05894592C2F09D9 /* Pods_Code.framework */,
@@ -1926,6 +1937,7 @@
 		944EEBE72563C381009D77FE = {
 			isa = PBXGroup;
 			children = (
+				2151389526AE1C18000EC7B2 /* Clibgit2.xcframework */,
 				94A4438225A389FF006643FF /* README.md */,
 				94F5270E25A37E8D00337306 /* .gitignore */,
 				94A56854257CEBC8008A6530 /* Code App.entitlements */,
@@ -1955,6 +1967,7 @@
 		944EEBF22563C381009D77FE /* CodeApp */ = {
 			isa = PBXGroup;
 			children = (
+				21F0BCCD26ADEAC30065D2EF /* Framework */,
 				949BAD4D25E1137400BC83B5 /* Node */,
 				94A5682D257CC367008A6530 /* Localization */,
 				948D12202583F24E008F877A /* terminal.bundle */,
@@ -6620,6 +6633,7 @@
 				94A7781B257BC452008FE7B2 /* ZIPFoundation */,
 				94D0A49C2594DDDE00C4572D /* MarkdownView */,
 				94A7418B25F74A85007A9728 /* Dynamic */,
+				215138A326AE25E3000EC7B2 /* MarkdownView */,
 			);
 			productName = testfield;
 			productReference = 944EEBF02563C381009D77FE /* Code.app */;
@@ -6632,7 +6646,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					94369AFB25E3B933008419A0 = {
 						CreatedOnToolsVersion = 12.4;
@@ -6656,9 +6670,9 @@
 			);
 			mainGroup = 944EEBE72563C381009D77FE;
 			packageReferences = (
-				94A777E5257B8F8A008FE7B2 /* XCRemoteSwiftPackageReference "MarkdownView" */,
 				94A7781A257BC452008FE7B2 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				94A7418A25F74A85007A9728 /* XCRemoteSwiftPackageReference "Dynamic" */,
+				215138A226AE25E3000EC7B2 /* XCRemoteSwiftPackageReference "MarkdownView" */,
 			);
 			productRefGroup = 944EEBF12563C381009D77FE /* Products */;
 			projectDirPath = "";
@@ -6683,10 +6697,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F0BD4126ADEEAE0065D2EF /* InfoPlist.strings in Resources */,
 				944EEBFB2563C386009D77FE /* Preview Assets.xcassets in Resources */,
 				94A56830257CC3A1008A6530 /* Localizable.strings in Resources */,
 				94A4439025A44CDC006643FF /* monaco-textmate.bundle in Resources */,
-				94252059263E103E0029427A /* InfoPlist.strings in Resources */,
 				94B3D65925F776AA00C4F2B1 /* cacert.pem in Resources */,
 				948D12012583F20D008F877A /* commandDictionary.plist in Resources */,
 				94CF58DF265E51B100CB6A4B /* ClangLib in Resources */,
@@ -6708,7 +6722,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		857F774D87A567B2A739C17E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -6876,7 +6890,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 30;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				DEVELOPMENT_TEAM = LK68V6D6JF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6891,7 +6905,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code.extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryorama.vscode.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension/NodeRunner/extension-Bridging-Header.h";
@@ -6908,7 +6922,7 @@
 				CODE_SIGN_ENTITLEMENTS = extension/extension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 30;
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				DEVELOPMENT_TEAM = LK68V6D6JF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6923,7 +6937,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code.extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryorama.vscode.extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "extension/NodeRunner/extension-Bridging-Header.h";
@@ -6936,6 +6950,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -6997,6 +7012,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -7061,7 +7077,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				DEVELOPMENT_TEAM = LK68V6D6JF;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7076,6 +7092,7 @@
 					"$(PROJECT_DIR)/Resources/NodeJS/Release-iphoneos",
 				);
 				INFOPLIST_FILE = CodeApp/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7086,7 +7103,7 @@
 					"$(PROJECT_DIR)/CodeApp/Framework",
 				);
 				MARKETING_VERSION = 1.2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryorama.vscode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
 				SUPPORTS_MACCATALYST = NO;
@@ -7110,7 +7127,7 @@
 				CURRENT_PROJECT_VERSION = 30;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 69R94YG49H;
+				DEVELOPMENT_TEAM = LK68V6D6JF;
 				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -7126,6 +7143,7 @@
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = CodeApp/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -7136,7 +7154,7 @@
 					"$(PROJECT_DIR)/CodeApp/Framework",
 				);
 				MARKETING_VERSION = 1.2.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "thebaselab.VS-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryorama.vscode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_STYLE = "non-global";
 				SUPPORTS_MACCATALYST = NO;
@@ -7179,20 +7197,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		215138A226AE25E3000EC7B2 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thebaselab/MarkdownView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		94A7418A25F74A85007A9728 /* XCRemoteSwiftPackageReference "Dynamic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mhdhejazi/Dynamic.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.2.0;
-			};
-		};
-		94A777E5257B8F8A008FE7B2 /* XCRemoteSwiftPackageReference "MarkdownView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/keitaoouchi/MarkdownView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.7.1;
 			};
 		};
 		94A7781A257BC452008FE7B2 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
@@ -7206,6 +7224,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		215138A326AE25E3000EC7B2 /* MarkdownView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 215138A226AE25E3000EC7B2 /* XCRemoteSwiftPackageReference "MarkdownView" */;
+			productName = MarkdownView;
+		};
 		94A7418B25F74A85007A9728 /* Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 94A7418A25F74A85007A9728 /* XCRemoteSwiftPackageReference "Dynamic" */;
