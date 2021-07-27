@@ -45,7 +45,7 @@
 	</dict>
 	<key>NSUserActivityTypes</key>
 	<array>
-		<string>com.thebaselab.codeapp.openEditor</string>
+		<string>com.ryorama.vscodeapp.openEditor</string>
 	</array>
 </dict>
 </plist>

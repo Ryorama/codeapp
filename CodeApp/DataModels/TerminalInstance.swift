@@ -250,7 +250,7 @@ class TerminalInstance: NSObject, WKScriptMessageHandler, WKNavigationDelegate {
             let data = result["Input"] as! String
             if data == #"\u0003"# && !isInteractive{
                 if nodeUUID != nil {
-                    let notificationName = CFNotificationName("com.thebaselab.code.node.stop" as CFString)
+                    let notificationName = CFNotificationName("com.ryorama.vscode.node.stop" as CFString)
                     let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
                     CFNotificationCenterPostNotification(notificationCenter, notificationName, nil, nil, false)
                 }

@@ -42,7 +42,7 @@ class OutputListener {
                 strongSelf.coordinator.coordinate(writingItemAt: sharedURL.appendingPathComponent("stdout"), options: .forReplacing, error: &error, byAccessor: { url in
                     try? string.write(to: url, atomically: true, encoding: .utf8)
                     
-                    let notificationName = CFNotificationName("com.thebaselab.code.node.stdout" as CFString)
+                    let notificationName = CFNotificationName("com.ryorama.vscode.node.stdout" as CFString)
                     let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
                     CFNotificationCenterPostNotification(notificationCenter, notificationName, nil, nil, false)
                 })
@@ -103,7 +103,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
         // Do not call super in an Action extension with no user interface
         self.extensionContext = context
         
-        let notificationName = "com.thebaselab.code.node.stop" as CFString
+        let notificationName = "com.ryorama.vscode.node.stop" as CFString
         let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
         
         CFNotificationCenterAddObserver(notificationCenter, nil,

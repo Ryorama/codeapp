@@ -117,7 +117,7 @@ struct panelView: View{
                             .padding(.trailing)
                             .highPriorityGesture(TapGesture().onEnded{
                                 if nodeUUID != nil {
-                                    let notificationName = CFNotificationName("com.thebaselab.code.node.stop" as CFString)
+                                    let notificationName = CFNotificationName("com.ryorama.vscode.node.stop" as CFString)
                                     let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
                                     CFNotificationCenterPostNotification(notificationCenter, notificationName, nil, nil, false)
                                 }
@@ -223,7 +223,7 @@ struct panelView: View{
                                         App.terminalInstance.executor?.sendInput(input: "\u{3}")
                                     }else {
                                         if nodeUUID != nil {
-                                            let notificationName = CFNotificationName("com.thebaselab.code.node.stop" as CFString)
+                                            let notificationName = CFNotificationName("com.ryorama.vscode.node.stop" as CFString)
                                             let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
                                             CFNotificationCenterPostNotification(notificationCenter, notificationName, nil, nil, false)
                                         }
