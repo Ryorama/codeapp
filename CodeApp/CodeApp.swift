@@ -242,7 +242,8 @@ struct CodeApp: App {
         
         // Main Python install: $APPDIR/Library/lib/python3.x
         let bundleUrl = URL(fileURLWithPath: Bundle.main.resourcePath!).appendingPathComponent("Library")
-        setenv("PYTHONHOME", bundleUrl.path.toCString(), 1)
+        setenv("PYTHONHOME", bundleUrl.path.toCString(), 1) 
+		
         // Compiled files: ~/Library/__pycache__
         setenv("PYTHONPYCACHEPREFIX", (libraryURL.appendingPathComponent("__pycache__")).path.toCString(), 1)
         setenv("PYTHONUSERBASE", libraryURL.path.toCString(), 1)
@@ -266,6 +267,9 @@ struct CodeApp: App {
         setenv("GIT_EXEC_PATH", bundleUrl.appendingPathComponent("bin").path.toCString(), 1)
         // Magic file
 //        setenv("MAGIC", Bundle.main.resourcePath! + "/usr/share/magic.mgc", 1)
+
+		//Java
+		setenv("JAVA_HOME", FileManager().url(for: .libraryDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("bin/jdk"), 1) 
         joinMainThread = false
         numPythonInterpreters = 2
         
