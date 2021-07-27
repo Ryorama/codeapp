@@ -269,7 +269,7 @@ struct CodeApp: App {
         joinMainThread = false
         numPythonInterpreters = 2
         
-        let notificationName = "com.thebaselab.code.node.stdout" as CFString
+        let notificationName = "com.ryorama.vscode.node.stdout" as CFString
         let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
         
         CFNotificationCenterAddObserver(notificationCenter, nil,
@@ -281,7 +281,7 @@ struct CodeApp: App {
                                             userInfo: CFDictionary?
                                         ) in
                                             
-                                            let sharedURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.thebaselab.code")!
+                                            let sharedURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.ryorama.vscode")!
                                             let stdoutURL = sharedURL.appendingPathComponent("stdout")
                                             
                                             guard let data = try? Data(contentsOf: stdoutURL), let str = String(data: data, encoding: .utf8) else {
@@ -374,7 +374,7 @@ var globalDarkTheme: [String: Any]? = nil
 var globalLightTheme: [String: Any]? = nil
 
 func sharedURL() -> URL{
-    return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.thebaselab.code")!
+    return FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.ryorama.vscode")!
 }
 
 func refreshNodeCommands() {
