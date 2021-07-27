@@ -269,7 +269,7 @@ struct CodeApp: App {
 //        setenv("MAGIC", Bundle.main.resourcePath! + "/usr/share/magic.mgc", 1)
 
 		//Java
-		setenv("JAVA_HOME", FileManager().url(for: .libraryDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("bin/jdk"), 1) 
+        setenv("JAVA_HOME", bundleUrl.appendingPathComponent("bin").appendingPathComponent("jdk").appendingPathComponent("bin").path.toCString(), 1)
         joinMainThread = false
         numPythonInterpreters = 2
         

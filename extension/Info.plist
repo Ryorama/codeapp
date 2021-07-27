@@ -32,7 +32,7 @@
             $extensionItem.attachments,
             $attachment,
             (
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.thebaselab.source"
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.thebaselab.source&quot;
             )
             ).@count == 1
             ).@count == 1
@@ -45,7 +45,11 @@
 	</dict>
 	<key>NSUserActivityTypes</key>
 	<array>
+<<<<<<< Updated upstream
 		<string>com.ryorama.vscodeapp.openEditor</string>
+=======
+		<string>com.ryorama.vscode.openEditor</string>
+>>>>>>> Stashed changes
 	</array>
 </dict>
 </plist>

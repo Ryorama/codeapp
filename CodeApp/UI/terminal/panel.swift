@@ -117,7 +117,11 @@ struct panelView: View{
                             .padding(.trailing)
                             .highPriorityGesture(TapGesture().onEnded{
                                 if nodeUUID != nil {
+<<<<<<< Updated upstream
                                     let notificationName = CFNotificationName("com.ryorama.vscode.node.stop" as CFString)
+=======
+                                    let notificationName = CFNotificationName("ccom.ryorama.vscode.node.stop" as CFString)
+>>>>>>> Stashed changes
                                     let notificationCenter = CFNotificationCenterGetDarwinNotifyCenter()
                                     CFNotificationCenterPostNotification(notificationCenter, notificationName, nil, nil, false)
                                 }
