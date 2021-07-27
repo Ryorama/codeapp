@@ -45,11 +45,7 @@
 	</dict>
 	<key>NSUserActivityTypes</key>
 	<array>
-<<<<<<< Updated upstream
-		<string>com.ryorama.vscodeapp.openEditor</string>
-=======
 		<string>com.ryorama.vscode.openEditor</string>
->>>>>>> Stashed changes
 	</array>
 </dict>
 </plist>
